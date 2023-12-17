@@ -418,6 +418,42 @@
 
      
  
+      <div class="contact-card2">
+        <div class="contact-details">
+          <div class="contact-image-container">
+            <img class="contact-image2" src="one.jpg" alt="Profile Image" />
+          </div>
+          <div>
+            <div class="name">
+                Mr. B.D.M.S.K. Banneheka<br />
+              <span class="disgnation">Officer In Charge-Area <br>(System D)</span><br />
+              <p>
+                In.com : <span id="">None</span><br />
+                LandLine : <span id="drpmd_land">027-3277188</span><br />
+                Mobile : <span id="drpmd_mobile">071-2229749
+ 
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-buttons">
+          <button class="call-button" onclick="callNumber('drpmd_land')">
+            Call LandLine
+          </button>
+          <button class="call-button" onclick="callNumber('drpmd_mobile')">
+            Call Mobile
+          </button>
+        </div>
+        <script>
+          function callNumber(number, isMobile = false) {
+            var prefix = isMobile ? "tel:" : "tel:";
+            window.location.href =
+              prefix + document.getElementById(number).textContent;
+          }
+        </script>
+      </div>
+
 
 
 
